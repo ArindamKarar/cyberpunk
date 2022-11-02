@@ -1,0 +1,56 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a>
+  <h2>Find Rooms</h2>
+</div>
+
+<body ng-app="">
+  <img src="https://images.oyoroomscdn.com/uploads/hotel_image/178394/1cbb5dfdc40986c4.jpg" alt="Girl in a jacket" width="200" height="100">
+  <button class="cybr-btn">
+    Book<span aria-hidden>_</span>
+    <span aria-hidden class="cybr-btn__glitch">Book_</span>
+    <span aria-hidden class="cybr-btn__tag">A303</span>
+  </button>
+
+  <br>
+  <br>
+  <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/296327139.jpg?k=00ed2d3aee689630410fcd697f088a5725460e8c5064b6c7d2eb2a25ea0243f6&o=&hp=1" alt="Girl in a jacket" width="200" height="100">
+  <button class="cybr-btn">
+    Book<span aria-hidden>_</span>
+    <span aria-hidden class="cybr-btn__glitch">Book_</span>
+    <span aria-hidden class="cybr-btn__tag">A303</span>
+  </button>
+
+  <br>
+  <br>
+  <img src="https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2020/07/24233628/1-BHK-Flat-Design-Storage.jpg" alt="Girl in a jacket" width="200" height="100">
+  <button class="cybr-btn">
+    Book<span aria-hidden>_</span>
+    <span aria-hidden class="cybr-btn__glitch">Book_</span>
+    <span aria-hidden class="cybr-btn__tag">A303</span>
+  </button>
+
+    <form>
+      <u><h2> Details -</h2></u>
+      <p>FirstName: <input type="text" ng-model="name"/></p>
+      <p>LastName: <input type="text" ng-model="name"/></p>
+
+      <p> Gender:
+      <p>Male<input type="radio" ng-model="opt1" value="one"/>
+      Female<input type="radio" ng-model="opt2" value="two"/></p>    
+    </form>
+    <div ng-switch="opt1">
+      <div ng-switch-when="one">
+        <h4>Gender is Male</h4>
+      </div>
+      <div ng-switch-when="two">
+        <h4> Gender is Female</h4>
+      </div>
+    </div>     
+</body>
+
+</html>
